@@ -13,7 +13,6 @@ TR = 2  # Turn Right
 PK = 3  # Pickup Key
 UD = 4  # Unlock Door
 
-
 def step_cost(action):
     # You should implement the stage cost by yourself
     # Feel free to use it or not
@@ -71,7 +70,9 @@ def load_env(path):
         gym-environment, info
     """
     with open(path, "rb") as f:
+        print("Load {}".format(path))
         env = pickle.load(f)
+        print("load env")
 
     info = {"height": env.height, "width": env.width, "init_agent_pos": env.agent_pos, "init_agent_dir": env.dir_vec}
 
@@ -159,5 +160,3 @@ def draw_gif_from_seq(seq, env, path="./gif/doorkey.gif"):
             writer.append_data(img)
     print(f"GIF is written to {path}")
     return
-
-# "imageio.mimsave
