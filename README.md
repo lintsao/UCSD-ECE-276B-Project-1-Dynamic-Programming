@@ -1,46 +1,17 @@
-# ECE276B_PR1
-
-This is the programming assignment for UCSD ECE 276B: Planning & Learning in Robotics, Project 1: Dynamic Programming
-
-## Installation
-
-```bash
-cd starter_code
-pip3 install -r requirements.txt
-```
-
-## Usage
-
-```
-cd starter_code
-python3 doorkey.py
-```
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-
-
 # UCSD ECE 276B Project 1: Dynamic Programming
 
-This project will focus on comparing the performance of search-based and sampling-based motion planning algorithms in 3-D Euclidean space. You are provided with a set of 3-D environments described by a rectangular outer boundary and a set of rectangular obstacle blocks. Each rectangle is described by a 9-dimensional vector, specifying its lower left corner ($x_{min}$, $y_{min}$, $z_{min}$), its upper right corner ($x_{max}$, $y_{max}$, $z_{max}$), and its RGB color (for visualization). The start $x_s$ ∈ $R^3$ and goal $x_τ$ ∈ $R^3$ coordinates are also specified for each of the available environments. The provided sample code includes a baseline planner which moves greedily toward the goal. This planner gets stuck in complex environments and is not very careful with collision checking.
+This project focuses on autonomous navigation in a Door & Key environment. The objective is to get our agent (red triangle) to the goal location (green square). The environment may contain a door that blocks the way to the goal. If the door is closed, the agent needs to pick up a key to unlock the door. The agent has three regular actions, move forward (MF), turn left (TL), and turn right (TR), and two special actions, pick up the key (PK) and unlock the door (UD). 
 
 <p align="center">
-  <img src="https://github.com/homerun-beauty/UCSD-ECE-276B-Project-2-Motion-Planning/assets/60029900/761258aa-20d3-4792-a84c-a8f9ed142cb9" alt="Project Image" width="400">
-  <img src="https://github.com/homerun-beauty/UCSD-ECE-276B-Project-2-Motion-Planning/assets/60029900/fda80b7f-5e42-4eb3-a98f-84cf2c133cfb" alt="Project Image" width="400">
-</p>
-<p align="center">Here is a visual representation of our project in action. The agent is inside the maze environment. </p>
+  <img src="https://github.com/lintsao/UCSD-ECE-276B-Project-1-Dynamic-Programming/blob/master/starter_code/gif/DoorKey-8x8-10.gif?raw=true" alt="Project Image" width="400">
+<p align="center">Here is a visual representation of our project in action. The goal of the agent is to exit the door. </p>
 
-## To get started with the motion planning project, follow these steps:
+## To get started with the dynamic programming project, follow these steps:
 
 1. Clone this repository:
   ```bash
   git clone https://github.com/lintsao/UCSD-ECE-276B-Project-1-Dynamic-Programming.git
-  cd UCSD-ECE-276B-Project-2-Dynamic-Programming
+  cd UCSD-ECE-276B-Project-1-Dynamic-Programming
   ```
 
 2. Create a new virtual environment:
