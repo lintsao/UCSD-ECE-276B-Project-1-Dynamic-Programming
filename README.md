@@ -3,7 +3,7 @@
 This project focuses on autonomous navigation in a Door & Key environment. The objective is to get our agent (red triangle) to the goal location (green square). The environment may contain a door that blocks the way to the goal. If the door is closed, the agent needs to pick up a key to unlock the door. The agent has three regular actions, move forward (MF), turn left (TL), and turn right (TR), and two special actions, pick up the key (PK) and unlock the door (UD). 
 
 <p align="center">
-  <img src="https://github.com/lintsao/UCSD-ECE-276B-Project-1-Dynamic-Programming/blob/master/starter_code/gif/doorkey-8x8-normal.gif?raw=true" alt="Project Image" width="400">
+  <img src="https://github.com/lintsao/UCSD-ECE-276B-Project-1-Dynamic-Programming/blob/master/starter_code/gif/DoorKey-8x8-4.gif?raw=true" alt="Project Image" width="400">
 <p align="center">Here is a visual representation of our project in action. The goal of the agent is to reach the green grid. </p>
 
 ## To get started with the dynamic programming project, follow these steps:
