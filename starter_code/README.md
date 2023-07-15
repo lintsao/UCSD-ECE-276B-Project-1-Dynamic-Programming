@@ -20,14 +20,6 @@ There are 7 test scenes you have to test and include in the report.
 | :-------------------------------------: | :--------------------------------------: | :----------------------------------------: |
 | <img src="envs/known_envs/doorkey-8x8-normal.png"> | <img src="envs/known_envs/doorkey-8x8-direct.png" > | <img src="envs/known_envs/doorkey-8x8-shortcut.png" > |
 
-## Installation
-
-- Install Python version `3.8 ~ 3.10`
-- Install dependencies
-```bash
-pip install -r requirements.txt
-```
-
 ## Instruction
 ### 1. doorkey.py
 You will need to modify **doorkey.py** as the main entrance.
